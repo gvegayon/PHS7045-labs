@@ -268,18 +268,24 @@ my_e &lt;- function(...) {
 my_e(123, pi)</code></pre>
 <pre><code>##  num 123
 ##  num 3.14
-## [1] &quot;0x37cf1c0&quot;
-## [1] &quot;0x35544b8&quot;</code></pre>
+## [1] &quot;0x2e31770&quot;
+## [1] &quot;0x2bb6870&quot;</code></pre>
 <pre class="r"><code>my_e(123, pi = pi)</code></pre>
 <pre><code>##  num 123
 ##  num 3.14
-## [1] &quot;0x37cf118&quot;
-## [1] &quot;0x35544b8&quot;</code></pre>
+## [1] &quot;0x2e316c8&quot;
+## [1] &quot;0x2bb6870&quot;</code></pre>
 <p>Knit the document, commit your changes, and push them to GitHub.</p>
 </div>
 <div id="question-2-lady-evaluation" class="section level2">
 <h2>Question 2: <strong>Lady evaluation</strong></h2>
 <p>A concept we did not review was lazy evaluation. Write a function with two arguments (<code>a</code> and <code>b</code>) that only uses one of them as an integer, and then call the function passing the following arguments <code>(1, this_stuff)</code></p>
+<pre class="r"><code>fun &lt;- function(a, b) {
+  print(a)
+}
+
+fun(1, this_stuff)</code></pre>
+<pre><code>## [1] 1</code></pre>
 <p>Knit the document, commit your changes, and push them to GitHub.</p>
 </div>
 <div id="question-3-putting-all-together" class="section level2">
